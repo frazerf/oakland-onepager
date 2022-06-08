@@ -1,0 +1,15 @@
+/*------------------*
+# Headings
+*------------------*/
+
+/*
+ * Uniform spacing and color for headings
+*/
+
+.h1 {
+  font-family: $base-font-family-bold;
+}
+
+h1 {
+  @extend .h1;
+}
