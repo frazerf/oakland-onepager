@@ -49,7 +49,24 @@ $('a[href*="#"]')
 var waypoint = new Waypoint({
   element: document.getElementById('basic-waypoint'),
   handler: function() {
-    $( "nav" ).toggleClass( "active" );
+    $( "header" ).toggleClass( "active" );
     $( ".scroll-to-top" ).fadeToggle(300);
   }
 })
+
+// About waypoint
+var waypoint = new Waypoint({
+  element: document.getElementById('about'),
+  handler: function() {
+    $( "#about" ).addClass( "animate__animated" );
+  }
+})
+/* ------------------------------------ */
+/* Accordion */
+/* ------------------------------------ */
+
+$('.head').click(function(){
+  $(this).toggleClass('active');
+  $(this).parent().find('.arrow').toggleClass('arrow-animate');
+  $(this).parent().find('.content').slideToggle(280);
+});

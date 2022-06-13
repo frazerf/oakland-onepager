@@ -1,0 +1,39 @@
+form {
+    .form-item {
+        display: flex;
+        margin-top: 20px;
+        input, textarea {
+            flex-grow: 1;
+            background: none;
+            border: 0;
+            border-bottom: 1px solid $color-primary;
+            margin-left: 40px;
+            outline: none;
+            transition: 300ms ease-in-out border-bottom;
+            color: $color-primary;
+            font-size: 30px;
+            &:focus {
+                border-bottom: lighten($color: #000000, $amount: 30) 1px solid;
+            }
+        }
+        label {
+            @extend .h3;
+        }
+    }
+    .submit {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 0;
+        background-color: $color-primary;
+        font-family: $base-font-family-bold;
+        color: black;
+        margin-top: 50px;
+        margin-left: 25%;
+        transition: ease-in-out 300ms all;
+        &:hover {
+            background-color: darken($color: $color-primary, $amount: 20);
+            cursor: pointer;
+        }
+    }
+}

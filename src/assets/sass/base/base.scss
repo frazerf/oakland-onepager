@@ -21,14 +21,26 @@ html {
 }
 
 body {
-    align-items: stretch;
-    display: block;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.5;
-    min-height: 100vh;
-    overflow-x: hidden;
-    position: relative;
+    background: black;
+    color: $color-primary;
+}
+
+.container-o {
+    padding-left: 5%;
+    padding-right: 5%;
     width: 100%;
-    
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+}
+
+.spacer {
+    padding-top: 200px;
+    padding-bottom: 200px;   
+}
+
+.spacer-title {
+    margin-top: 60px;
 }
