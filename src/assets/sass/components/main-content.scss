@@ -7,3 +7,36 @@
 .hero {
     height: 100vh;
 }
+
+.testimonials {
+    margin-top: 150px;
+}
+
+.citation {
+    text-align: right;
+    margin-top: 40px;
+}
+
+.oak-svg {
+    margin-top: 150px;
+    width: 215px;
+    height: 119px;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(sm) {
+        width: 298px;
+        height: 165px;
+        margin-top: 40px;
+    }
+    @include media-breakpoint-up(md) {
+        width: 365px;
+        height: 202px;
+    }
+}
+
+.opo {
+    opacity: 0;
+    transition: 750ms ease-in-out all;
+    &.fader {
+        opacity: 1;
+    }
+}

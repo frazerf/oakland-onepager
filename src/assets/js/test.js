@@ -58,8 +58,36 @@ var waypoint = new Waypoint({
 var waypoint = new Waypoint({
   element: document.getElementById('about'),
   handler: function() {
-    $( "#about" ).addClass( "animate__animated" );
-  }
+    $( "#about" ).addClass( "fader" );
+  },
+  offset: '50%' 
+})
+
+// Services waypoint
+var waypoint = new Waypoint({
+  element: document.getElementById('services'),
+  handler: function() {
+    $( "#services" ).addClass( "fader" );
+  },
+  offset: '50%' 
+})
+
+// Clients waypoint
+var waypoint = new Waypoint({
+  element: document.getElementById('clients'),
+  handler: function() {
+    $( "#clients" ).addClass( "fader" );
+  },
+  offset: '50%' 
+})
+
+// Contact waypoint
+var waypoint = new Waypoint({
+  element: document.getElementById('contact'),
+  handler: function() {
+    $( "#contact" ).addClass( "fader" );
+  },
+  offset: '50%' 
 })
 /* ------------------------------------ */
 /* Accordion */

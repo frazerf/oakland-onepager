@@ -7,9 +7,16 @@ footer {
     .footer-left {
         display: flex;
         align-items: flex-end;
+        justify-content: center;
+        @include media-breakpoint-up(md) {
+            justify-content: initial;
+        }
         img {
-            width: 80px;
+            width: 50px;
             display: block;
+            @include media-breakpoint-up(md) {
+                width: 80px;
+            }
         }
         ul {
             margin: 0;
@@ -26,6 +33,11 @@ footer {
         }
     }
     .footer-right {
-        text-align: right;
+        text-align: center;
+        margin-top: 40px;
+        @include media-breakpoint-up(md) {
+            text-align: right;
+            margin-top: 0;
+        }
     }
 }

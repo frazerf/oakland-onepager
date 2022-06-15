@@ -1,39 +1,37 @@
 form {
-    .form-item {
-        display: flex;
-        margin-top: 20px;
-        input, textarea {
-            flex-grow: 1;
-            background: none;
-            border: 0;
-            border-bottom: 1px solid $color-primary;
-            margin-left: 40px;
+    margin-top: 50px;
+    input, textarea {
+        display: block;
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $color-primary;
+        margin-bottom: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 17px;
+        color: $color-primary;
+        &:focus {
             outline: none;
-            transition: 300ms ease-in-out border-bottom;
-            color: $color-primary;
-            font-size: 30px;
-            &:focus {
-                border-bottom: lighten($color: #000000, $amount: 30) 1px solid;
-            }
+            border-bottom: 1px solid darken($color: $color-primary, $amount: 20);
         }
-        label {
-            @extend .h3;
+        @include media-breakpoint-up(md) {
+            font-size: 20px;
         }
     }
+    textarea {
+        height: 200px;
+    }
     .submit {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 0;
-        background-color: $color-primary;
-        font-family: $base-font-family-bold;
-        color: black;
-        margin-top: 50px;
-        margin-left: 25%;
-        transition: ease-in-out 300ms all;
-        &:hover {
-            background-color: darken($color: $color-primary, $amount: 20);
-            cursor: pointer;
+        display: inline-block;
+        width: auto;
+        border: 1px solid $color-primary;
+        color: $color-primary;
+        padding: 16px 40px;
+        font-size: 17px;
+        margin-top: 20px;
+        @include media-breakpoint-up(md) {
+            font-size: 20px;
         }
     }
 }
