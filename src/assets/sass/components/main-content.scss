@@ -5,7 +5,10 @@
 }
 
 .hero {
-    height: 100vh;
+    height: 90vh;
+    @include media-breakpoint-up(sm) {
+        height: 100vh;
+    }
 }
 
 .testimonials {
@@ -25,11 +28,11 @@
     @include media-breakpoint-up(sm) {
         width: 298px;
         height: 165px;
-        margin-top: 40px;
     }
     @include media-breakpoint-up(md) {
         width: 365px;
         height: 202px;
+        margin-top: 40px;
     }
 }
 
@@ -39,4 +42,8 @@
     &.fader {
         opacity: 1;
     }
+}
+
+.hidden {
+    display: none;
 }

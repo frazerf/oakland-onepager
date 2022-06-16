@@ -239,10 +239,15 @@
       <h4 class="h5">Creating beautiful, engaging content is key.</h4>
       <p>Oakland Agency is your boutique brand strategy, marketing, and PR consultancy. If you have a small project,
         one-off event or are looking for long term digital or creative support, let’s chat!</p>
-      <form>
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email address" />
-        <textarea placeholder="Message"></textarea>
+      <form name="contact" action="/pages/success" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Name" />
+        <input type="email" name="email" placeholder="Email address" />
+        <textarea name="message" placeholder="Message"></textarea>
+        <p class="hidden">
+          <label>
+            Don’t fill this out if you’re human: <input name="bot-field" />
+          </label>
+        </p>
         <input class="submit" type="submit" value="Send" />
       </form>
     </div>
