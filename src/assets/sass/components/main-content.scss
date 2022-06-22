@@ -23,15 +23,15 @@
 .oak-svg {
     margin-top: 150px;
     width: 215px;
-    height: 119px;
+    height: 113px;
     margin-bottom: 20px;
     @include media-breakpoint-up(sm) {
-        width: 298px;
-        height: 165px;
+        width: 292px;
+        height: 154px;
     }
     @include media-breakpoint-up(md) {
-        width: 365px;
-        height: 202px;
+        width: 307px;
+        height: 195px;
         margin-top: 40px;
     }
 }

@@ -9,14 +9,11 @@ form {
         margin-bottom: 20px;
         padding-top: 15px;
         padding-bottom: 15px;
-        font-size: 17px;
+        font-size: 16px;
         color: $color-primary;
         &:focus {
             outline: none;
             border-bottom: 1px solid darken($color: $color-primary, $amount: 20);
-        }
-        @include media-breakpoint-up(md) {
-            font-size: 20px;
         }
     }
     textarea {
@@ -28,11 +25,8 @@ form {
         border: 1px solid $color-primary;
         color: $color-primary;
         padding: 16px 40px;
-        font-size: 17px;
+        font-size: 16px;
         margin-top: 20px;
-        @include media-breakpoint-up(md) {
-            font-size: 20px;
-        }
         &:hover {
             cursor: pointer;
         }
