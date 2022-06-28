@@ -37,3 +37,12 @@
   font-weight: normal;
   src: url("../fonts/Acumin-BdPro.woff") format("woff");
 }
+
+@font-face {font-family: "Avenir Next Ultra Light";
+  src: url("../fonts/ave.eot"); /* IE9*/
+  src: url("../fonts/ave.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/ave.woff2") format("woff2"), /* chrome firefox */
+  url("../fonts/ave.woff") format("woff"), /* chrome firefox */
+  url("../fonts/ave.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+  url("../fonts/ave.svg#Avenir Next Ultra Light") format("svg"); /* iOS 4.1- */
+}
