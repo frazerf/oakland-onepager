@@ -98,3 +98,11 @@ $('.head').click(function(){
   $(this).parent().find('.arrow').toggleClass('arrow-animate');
   $(this).parent().find('.content').slideToggle(280);
 });
+
+/* ------------------------------------ */
+/* Modal */
+/* ------------------------------------ */
+MicroModal.init({
+  disableScroll: true,
+  disableFocus: true,
+});
