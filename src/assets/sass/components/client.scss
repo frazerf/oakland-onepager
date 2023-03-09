@@ -1,9 +1,12 @@
 .client {
     &-image {
-        cursor: pointer;
         img {
             width: 100%;
             display: block;
+            @include media-breakpoint-up(md) {
+                width: 70%;
+                margin: 0 auto;
+            }
         }
     }
     &-content { 
@@ -12,6 +15,123 @@
         margin-bottom: 20px;
         @include media-breakpoint-up(md) {
             margin-bottom: 50px;
+        }
+    }
+}
+
+.scattered-image {
+    img {
+        display: block;
+        width: 100%;
+    }
+    .row1 {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        margin-bottom: 5vw;
+        .pic1 {
+            margin-left: 0vw;
+            img {
+                width: 20vw;
+            }
+        }
+        .pic2 {
+            margin-top: 5vw;
+            img {
+                width: 30vw;
+            }
+        }
+        .pic3 {
+            margin-right: 4vw;
+            margin-top: 2vw;
+            img {
+                width: 20vw;
+            }
+        }
+    }
+    .row2 {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        margin-bottom: 5vw;
+        .pic1 {
+            margin-top: 5vw;
+            margin-left: 15vw;
+            img {
+                width: 27vw;
+            }
+        }
+        .pic2 {
+            margin-right: 20vw;
+            img {
+                width: 20vw;
+            }
+        }
+    }
+    .row3 {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        margin-bottom: 5vw;
+        .pic1 {
+            margin-left: 5vw;
+            img {
+                width: 20vw;
+            }
+        }
+        .pic2 {
+            margin-top: 5vw;
+            img {
+                width: 30vw;
+            }
+        }
+        .pic3 {
+            margin-right: 10vw;
+            margin-top: 2vw;
+            img {
+                width: 20vw;
+            }
+        }
+    }
+    .row4 {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        margin-bottom: 5vw;
+        .pic1 {
+            margin-top: 5vw;
+            margin-left: 12vw;
+            img {
+                width: 37vw;
+            }
+        }
+        .pic2 {
+            margin-right: 12vw;
+            img {
+                width: 25vw;
+            }
+        }
+    }
+    .row5 {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        .pic1 {
+            img {
+                width: 25vw;
+            }
+        }
+        .pic2 {
+            margin-top: 5vw;
+            img {
+                width: 30vw;
+            }
+        }
+        .pic3 {
+            margin-top: 15vw;
+            img {
+                width: 30vw;
+            }
         }
     }
 }

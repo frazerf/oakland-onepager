@@ -41,6 +41,12 @@
 </a>
 <div id="top"></div>
 <div class="container-o hero">
+  <div class="video-hero animate__fadeIn animate__animated">
+    <video autoplay muted loop playsinline>
+      <source src="/images/showreel.mp4" type=video/mp4>
+    </video>
+  </div>
+  <div class="vid-hero-bg"></div>
   <div class="row">
     <div class="col-12">
 
@@ -202,6 +208,25 @@
   </div>
 </div>
 
+<div class="scattered-image">
+  <div class="row1">
+    <div class="pic1">
+      <img src="/images/scattered-image-1.jpg" alt="">
+    </div>
+    <div class="pic2">
+      <img src="/images/scattered-image-2.jpg" alt="">
+    </div>
+  </div>
+  <div class="row2">
+    <div class="pic1">
+      <img src="/images/scattered-image-3.jpg" alt="">
+    </div>
+    <div class="pic2">
+      <img src="/images/scattered-image-4.jpg" alt="">
+    </div>
+  </div>
+</div>
+
 <div id="clients" class="container-o spacer opo">
   <div class="row">
     <div class="col-12">
@@ -209,46 +234,68 @@
     </div>
   </div>
   <div class="row spacer-title">
-    <div class="col-sm-6 col-md-4 col-12">
-      <div class="client-image" data-micromodal-trigger="modal-1" role="button">
-        <img loading=lazy src="/images/clinic1.jpg" alt="Clinic 1 image" />
-      </div>
-      <div class="client-content">
-        <p>Clinic 1</p>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-12">
+    
+    <div class="col-sm-4 col-md-3 col-4">
       <div class="client-image">
-        <img loading=lazy src="/images/kindred.jpg" alt="Kindred Road image" />
-      </div>
-      <div class="client-content">
-        <p>Kindred Road</p>
+        <img loading=lazy src="/images/logos/braveface.png" alt="Clinic 1 image" />
       </div>
     </div>
-    <div class="col-sm-6 col-md-4 col-12">
+    <div class="col-sm-4 col-md-3 col-4">
       <div class="client-image">
-        <img loading=lazy src="/images/brave-face.jpg" alt="Brave Face image" />
-      </div>
-      <div class="client-content">
-        <p>Brave Face</p>
+        <img loading=lazy src="/images/logos/clinic1.png" alt="Clinic 1 image" />
       </div>
     </div>
-    <div class="col-sm-6 col-md-4 offset-md-2 col-12">
+    <div class="col-sm-4 col-md-3 col-4">
       <div class="client-image">
-        <img loading=lazy src="/images/tds.jpg" alt="The Diamond Shop image" />
-      </div>
-      <div class="client-content">
-        <p>The Diamond Shop</p>
+        <img loading=lazy src="/images/logos/clinicians.png" alt="Clinic 1 image" />
       </div>
     </div>
-    <div class="col-sm-6 col-md-4 offset-sm-3 offset-md-0 col-12">
+    <div class="col-sm-4 col-md-3 col-4">
       <div class="client-image">
-        <img loading=lazy src="/images/clinicians.jpg" alt="Clinicians image" />
-      </div>
-      <div class="client-content">
-        <p>Clinicians</p>
+        <img loading=lazy src="/images/logos/elliottharrison.png" alt="Clinic 1 image" />
       </div>
     </div>
+    <div class="col-sm-4 col-md-3 col-4">
+      <div class="client-image">
+        <img loading=lazy src="/images/logos/etchethos.png" alt="Clinic 1 image" />
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-3 col-4">
+      <div class="client-image">
+        <img loading=lazy src="/images/logos/hm.png" alt="Clinic 1 image" />
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-3 col-4">
+      <div class="client-image">
+        <img loading=lazy src="/images/logos/kindred.png" alt="Clinic 1 image" />
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-3 col-4">
+      <div class="client-image">
+        <img loading=lazy src="/images/logos/oakandbon.png" alt="Clinic 1 image" />
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-3 col-4">
+      <div class="client-image">
+        <img loading=lazy src="/images/logos/qv.png" alt="Clinic 1 image" />
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-3 col-4">
+      <div class="client-image">
+        <img loading=lazy src="/images/logos/rivitalash.png" alt="Clinic 1 image" />
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-3 col-4">
+      <div class="client-image">
+        <img loading=lazy src="/images/logos/tds.png" alt="Clinic 1 image" />
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-3 col-4">
+      <div class="client-image">
+        <img loading=lazy src="/images/logos/wholesomepet.png" alt="Clinic 1 image" />
+      </div>
+    </div>
+
   </div>
   <div class="row testimonials">
     <div class="col-sm-4 col-12">
@@ -338,7 +385,7 @@
           </div>
           <div class="col-12 col-md-6 align-self-end">
             <div class="footer-right">
-                <p>&copy; Copyright Oakland Agency 2022</p>
+                <p>&copy; Copyright Oakland Agency <span id="year"></span></p>
             </div>
           </div>
         </div>
@@ -349,7 +396,6 @@
         <script src="https://kit.fontawesome.com/67c8213daa.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-        <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

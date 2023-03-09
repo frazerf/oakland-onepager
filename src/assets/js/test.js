@@ -99,10 +99,4 @@ $('.head').click(function(){
   $(this).parent().find('.content').slideToggle(280);
 });
 
-/* ------------------------------------ */
-/* Modal */
-/* ------------------------------------ */
-MicroModal.init({
-  disableScroll: true,
-  disableFocus: true,
-});
+document.getElementById("year").innerHTML = new Date().getFullYear();

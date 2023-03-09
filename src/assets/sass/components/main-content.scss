@@ -6,8 +6,31 @@
 
 .hero {
     height: 90vh;
+    position: relative;
     @include media-breakpoint-up(sm) {
         height: 100vh;
+    }
+    .video-hero {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        video {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .vid-hero-bg {
+        background: rgba(0,0,0,0.3);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        
     }
 }
 
