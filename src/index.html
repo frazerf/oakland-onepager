@@ -39,7 +39,7 @@
   <div id="top"></div>
   <div class="container-o hero">
     <div class="video-hero animate__fadeIn animate__animated">
-      <video id="heroVideo" muted loop playsinline autoplay>
+      <video muted loop playsinline autoplay id="heroVideo">
         <source src="/src/images/showreel.mp4" type="video/mp4">
         <source src="/src/images/showreel.webm" type="video/webm">
       </video>
@@ -462,6 +462,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
   <script type="module" src="/src/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var video = document.getElementById('heroVideo');
+      video.play().catch(function(error) {
+        console.log('Error attempting to play the video: ', error);
+      });
+    });
+  </script>
 
 </body>
 
