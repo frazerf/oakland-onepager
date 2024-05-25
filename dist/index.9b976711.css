@@ -4194,7 +4194,7 @@ header nav ul li a {
 }
 
 .bouncing-arrow {
-  width: 18px;
+  width: 25px;
   animation: 3s ease-in-out infinite bounce;
   position: absolute;
   bottom: 60px;
